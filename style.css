@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* media quiries for navbar */
+
+@media screen and (max-width: 600px) {
+    li:nth-child(4),
+    li:nth-child(5) {
+        display: none;
+    }
+    .navbar {
+        padding-left: 22px;
+    }
+    .navbar .nav-items .nav-links {
+        width: 50px;
+    }
+}
+
+body {
+    scroll-behavior: smooth;
+    background-repeat: no-repeat;
+    background-color: #000000;
+    color: #ffffff;
+    font-family: "Raleway", sans-serif;
+    font-size: 16px;
+    text-transform: capitalize;
+    background-image: url("https://wallpapertag.com/wallpaper/full/a/8/d/34170-full-size-website-background-2560x1600-for-tablet.jpg");
+}
+
+.navbar {
+    width: 100vw;
+    height: 45px;
+    background-color: rgb(65, 65, 65);
+    color: aliceblue;
+    display: flex;
+    justify-content: flex-end;
+    transition-duration: 0.8s;
+    flex-wrap: wrap;
+}
+
+.navbar .nav-items {
+    display: flex;
+    margin-right: 5vw;
+}
+
+.navbar .nav-items .nav-links {
+    margin-inline: 27px;
+    list-style-type: none;
+    text-transform: capitalize;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 9px;
+    width: 90px;
+    text-align: center;
+}
+
+.navbar .nav-items .nav-links:hover {
+    border: none;
+    cursor: pointer;
+    border-bottom: 2.5px solid rgb(0, 0, 0);
+}
+
+
+/* hero section  */
+
+.hero {
+    height: 67vh;
+    width: 100vw;
+    text-transform: capitalize;
+    padding-top: 11em;
+    display: flex;
+}
+
+.hero-1 {
+    width: 50%;
+    margin-left: 17px;
+    margin-top: 10px;
+}
+
+.hero h1 {
+    font-size: 40px;
+    color: rgb(255, 255, 255);
+    margin-left: 15px;
+    padding-top: 35px;
+}
+
+.hero h2 {
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+    margin-left: 15px;
+    margin-top: 15px;
+}
+
+.hero h4 {
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+    margin-left: 15px;
+    margin-top: 15px;
+}
+
+.icon-container {
+    margin-left: 0px;
+}
+
+.icons {
+    margin-left: 15px;
+    margin-top: 30px;
+}
+
+.icons:hover {
+    cursor: pointer;
+    background-blend-mode: white;
+}
+
+a {
+    text-decoration: none;
+}
+
+@media screen and (max-width: 600px) {
+    .hero {
+        padding-top: 150px;
+        text-align: center;
+        margin: -26px;
+    }
+    .hero-1,
+    h1,
+    h2,
+    h4 {
+        width: 100vw;
+        font-size: 15px;
+    }
+}
+
+.hero-img {
+    width: 410px;
+    height: 280px;
+    position: absolute;
+    right: 70px;
+    top: 13em;
+    border-radius: 13px;
+    opacity: 70%;
+}
+
+@media screen and (max-width: 600px) {
+    .hero-img {
+        width: 105%;
+        height: 245px;
+        top: 490px;
+        left: 0px;
+    }
+}
+
+.main {
+    /* background: #000; */
+    height: 67vh;
+    width: 100vw;
+    text-transform: capitalize;
+    padding-top: 11em;
+    display: flex;
+}
