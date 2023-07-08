@@ -6,7 +6,8 @@
 
 /* media quiries for navbar */
 
-@media screen and (max-width: 600px) {
+
+/* @media screen and (max-width: 600px) {
     li:nth-child(4),
     li:nth-child(5) {
         display: none;
@@ -17,7 +18,7 @@
     .navbar .nav-items .nav-links {
         width: 50px;
     }
-}
+} */
 
 body {
     scroll-behavior: smooth;
@@ -30,8 +31,9 @@ body {
     background-image: url("https://wallpapertag.com/wallpaper/full/a/8/d/34170-full-size-website-background-2560x1600-for-tablet.jpg");
 }
 
-.navbar {
-    width: 100vw;
+
+/* .navbar {
+    width: 100%;
     height: 45px;
     background-color: rgb(65, 65, 65);
     color: aliceblue;
@@ -61,6 +63,110 @@ body {
     border: none;
     cursor: pointer;
     border-bottom: 2.5px solid rgb(0, 0, 0);
+} */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow: hidden;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 30px;
+    align-items: center;
+}
+
+.navbar span {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 700;
+}
+
+.skyBlue {
+    color: rgb(148, 148, 148);
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+}
+
+.navbar .hamburger {
+    display: none;
+}
+
+.lists {
+    display: none;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #adadad;
+    font-family: 'Poppins', sans-serif;
+    padding: 10px 20px;
+    margin: 0 5px;
+}
+
+.navbar ul li a:hover {
+    text-shadow: 0 0 20px rgb(255, 255, 255);
+}
+
+@media screen and (max-width:810px) {
+    .navbar ul {
+        display: none;
+    }
+    .navbar .hamburger {
+        display: block;
+        font-size: 25px;
+        color: rgb(124, 124, 124);
+        cursor: pointer;
+    }
+    .navbar .lists ul {
+        display: block;
+    }
+    .navbar .lists {
+        display: block;
+        top: 0;
+        background-color: gray;
+        width: 50%;
+        z-index: 200;
+        padding: 15px 10px;
+        position: absolute;
+        right: -100%;
+        transition: all 1s;
+    }
+    .navbar ul li a {
+        color: #fff8f8;
+    }
+    .navbar .items li {
+        transition: all 0.3s;
+    }
+    .navbar .items li:hover {
+        transform: translateX(10px);
+    }
+    .navbar .items li a:hover {
+        text-shadow: 0 0 5px black;
+    }
+    #cross {
+        display: block;
+        margin-left: 20px;
+        margin-top: 10px;
+        color: #fff;
+        cursor: pointer;
+        font-size: 25px;
+        list-style: none;
+    }
+    #menuLists.active {
+        right: 0;
+    }
+    .navbar .lists ul li {
+        margin: 20px 0;
+    }
 }
 
 
@@ -68,10 +174,11 @@ body {
 
 .hero {
     height: 67vh;
-    width: 100vw;
+    width: 100%;
     text-transform: capitalize;
     padding-top: 11em;
     display: flex;
+    transition-duration: 0.8s;
 }
 
 .hero-1 {
@@ -124,6 +231,7 @@ a {
         padding-top: 150px;
         text-align: center;
         margin: -26px;
+        flex-direction: column;
     }
     .hero-1,
     h1,
@@ -139,14 +247,14 @@ a {
     height: 280px;
     position: absolute;
     right: 70px;
-    top: 13em;
+    top: 14em;
     border-radius: 13px;
     opacity: 70%;
 }
 
 @media screen and (max-width: 600px) {
     .hero-img {
-        width: 105%;
+        width: 100%;
         height: 245px;
         top: 490px;
         left: 0px;
@@ -156,7 +264,7 @@ a {
 .main {
     /* background: #000; */
     height: 67vh;
-    width: 100vw;
+    width: 100%;
     text-transform: capitalize;
     padding-top: 11em;
     display: flex;
