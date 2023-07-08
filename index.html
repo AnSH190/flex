@@ -15,14 +15,40 @@
 </head>
 
 <body>
-    <nav class="navbar">
+    <!-- <nav class="navbar">
         <ul class="nav-items">
-            <li class="nav-links">Home</li>
-            <li class="nav-links">Projects</li>
-            <li class="nav-links">about us </li>
-            <li class="nav-links">catalogue</li>
-            <li class="nav-links">contact</li>
+            <li class="nav-links" onclick="nav()">Home</li>
+            <li class="nav-links" onclick="nav()">Projects</li>
+            <li class="nav-links" onclick="nav()">about us </li>
+            <li class="nav-links" onclick="nav()">catalogue</li>
+            <li class="nav-links" onclick="nav()">contact</li>
         </ul>
+    </nav> -->
+    <nav class="navbar">
+        <h2 class="heading">
+            <span class="skyBlue">My</span>
+            <span>Portfolio.</span>
+        </h2>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Tesimonials</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <ul class="hamburger" id="menuBar">
+            <li><i class="fa-solid fa-bars"></i></li>
+        </ul>
+        <div class="lists" id="menuLists">
+            <li id="cross"><i class="fa-solid fa-xmark"></i></li>
+            <ul class="items">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Tesimonials</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
     </nav>
     <div class="hero">
         <div class="hero-1">
@@ -67,5 +93,7 @@
         });
     </script>
 </body>
+
+<script src="flex.js"></script>
 
 </html>
